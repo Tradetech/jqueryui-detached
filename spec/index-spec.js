@@ -9,7 +9,7 @@ describe("index.js", function () {
 
     it("- test", function (done) {
         testUtil.onPage(function(window) {
-            var jqueryUI = require("../js/index");
+            var jqueryUI = require("../index");
             
             jqueryUI.clear();
             

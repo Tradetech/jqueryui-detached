@@ -1,3 +1,19 @@
+var $ui;
+
+exports.getJQueryUI = function() {
+    if (!$ui) {
+        var jquery = require('jquery-detached-2.1.4');
+        
+        $ui = jquery.newJQuery();        
+        exports.addToJQuery($ui);
+    }
+    return $ui;
+};
+
+exports.clear = function() {
+    $ui = undefined;
+};
+
 exports.addToJQuery = function ($) {
     var window = require('window-handle').getWindow();
     var _$ = window.$;
@@ -33,4 +49,4 @@ exports.addToJQuery = function ($) {
         window.$ = _$;
         window.jQuery = _jQuery;
     }
-}
+};

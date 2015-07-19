@@ -9,20 +9,26 @@ describe("index.js", function () {
 
     it("- test", function (done) {
         testUtil.onPage(function(window) {
-            var $ = require("jquery-detached-2.1.4").getJQuery();            
-            var jqueryui = require("../js/index");
+            var jqueryUI = require("../js/index");
             
-            jqueryui.addToJQuery($);
+            jqueryUI.clear();
             
-            expect($.fn.jquery).toBe('2.1.4');
+            var $1 = jqueryUI.getJQueryUI();
+            
+            expect($1.fn.jquery).toBe('2.1.4');
 
             expect(window.$).not.toBeDefined();
             expect(window.jQuery).not.toBeDefined();
 
-            var divOnPage = $('#divOnPage');
+            var divOnPage = $1('#divOnPage');
             expect(divOnPage.text()).toBe('jQueryUI is everywhere');
             expect(divOnPage.dialog).toBeDefined();
-   
+
+            jqueryUI.clear();
+            
+            var $2 = jqueryUI.getJQueryUI();
+            expect($1).not.toBe($2);
+            
             done();
         });
     });

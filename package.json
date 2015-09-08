@@ -1,6 +1,6 @@
 {
   "name": "jqueryui-detached",
-  "version": "1.11.4-v7",
+  "version": "1.11.4-v8",
   "description": "Module for creating jQuery UI instances, detached from the global namespace (window).",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,10 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-jasmine": "^2.0.1",
-    "jquery-detached-2.1.4": "^2.1.4-v2",
     "jsdom": "3.1.2"
   },
   "dependencies": {
+    "jquery-detached-2.1.4": "^2.1.4-v2",
     "window-handle": "^0.0.6"
   }
 }

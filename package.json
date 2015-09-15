@@ -1,6 +1,6 @@
 {
   "name": "jqueryui-detached",
-  "version": "1.11.4-v8",
+  "version": "1.11.4-v9",
   "description": "Module for creating jQuery UI instances, detached from the global namespace (window).",
   "main": "index.js",
   "scripts": {

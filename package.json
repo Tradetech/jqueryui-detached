@@ -12,11 +12,7 @@
     "type": "git",
     "url": "https://github.com/tfennelly/jqueryui-detached"
   },
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-jasmine": "^2.0.1",
-    "jsdom": "3.1.2"
-  },
+  "devDependencies": {},
   "dependencies": {
     "jquery-detached-2.1.4": "^2.1.4-v2",
     "window-handle": "^0.0.6"

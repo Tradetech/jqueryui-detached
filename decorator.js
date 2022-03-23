@@ -1,8 +1,7 @@
-const windowHandle = require('window-handle');
+import windowHandle from 'window-handle';
 
-module.exports = {
-    addToJQuery($) {
-    var window = windowHandle.getWindow();
+export function addToJQuery($) {
+    // var window = windowHandle.getWindow();
     var _$ = window.$;
     var _jQuery = window.jQuery;
 
@@ -17,22 +16,22 @@ module.exports = {
         var navigator = window.navigator;
         var document = window.document;
             
-        /* ----------------------------------------------------jQuery UI ---------------------------------------------------- */
-/*! jQuery UI - v1.11.4 - 2015-03-11
-* http://jqueryui.com
-* Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, droppable.js, effect.js, effect-blind.js, effect-bounce.js, effect-clip.js, effect-drop.js, effect-explode.js, effect-fade.js, effect-fold.js, effect-highlight.js, effect-puff.js, effect-pulsate.js, effect-scale.js, effect-shake.js, effect-size.js, effect-slide.js, effect-transfer.js, menu.js, progressbar.js, resizable.js, selectable.js, selectmenu.js, slider.js, sortable.js, spinner.js, tabs.js, tooltip.js
-* Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
+//         /* ----------------------------------------------------jQuery UI ---------------------------------------------------- */
+// /*! jQuery UI - v1.11.4 - 2015-03-11
+// * http://jqueryui.com
+// * Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, droppable.js, effect.js, effect-blind.js, effect-bounce.js, effect-clip.js, effect-drop.js, effect-explode.js, effect-fade.js, effect-fold.js, effect-highlight.js, effect-puff.js, effect-pulsate.js, effect-scale.js, effect-shake.js, effect-size.js, effect-slide.js, effect-transfer.js, menu.js, progressbar.js, resizable.js, selectable.js, selectmenu.js, slider.js, sortable.js, spinner.js, tabs.js, tooltip.js
+// * Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
 
-/*!
- * jQuery UI Core 1.11.4
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- *
- * http://api.jqueryui.com/category/ui-core/
- */
+// /*!
+//  * jQuery UI Core 1.11.4
+//  * http://jqueryui.com
+//  *
+//  * Copyright jQuery Foundation and other contributors
+//  * Released under the MIT license.
+//  * http://jquery.org/license
+//  *
+//  * http://api.jqueryui.com/category/ui-core/
+//  */
 
 
 // $.ui might exist from components with no dependencies, e.g., $.ui.position
@@ -16625,4 +16624,6 @@ var tooltip = $.widget( "ui.tooltip", {
         window.$ = _$;
         window.jQuery = _jQuery;
     }
-}};
+}
+
+export default { addToJQuery };
